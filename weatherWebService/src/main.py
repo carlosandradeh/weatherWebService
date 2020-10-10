@@ -57,22 +57,5 @@ def info_csv(path):
 
 
 if __name__ == '__main__':
-    
-    initial_time = time.time()
-    
-    initial_time_csv1 = time.time()
     info_csv('../csv/dataset1.csv')
-    final_time_csv1 = time.time()
-    time_csv1 = (final_time_csv1 - initial_time_csv1) / 60
-
-    initial_time_csv2 = time.time()
     info_csv('../csv/dataset2.csv')
-    final_time_csv2 = time.time()
-    time_csv2 = (final_time_csv2 - final_time_csv1) / 60
-    
-    final_time = time.time()
-    time = (final_time - initial_time) / 60
-
-    print('\nExcecution time for csv1: ' + str(time_csv1) + 'minutes.')
-    print('Excecution time for csv2: ' + str(time_csv2) + 'minutes.')
-    print('\nExecution time: ' + str(time) + 'minutes')
