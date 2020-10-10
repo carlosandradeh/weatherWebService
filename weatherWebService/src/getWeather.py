@@ -5,7 +5,7 @@ class GetWeather:
     @staticmethod
     def get_info(city):
         """
-        Method for the city format of the program's output.
+        Static Method for the city format of the program's output.
         :param city: Iata code for the request to the weather API
         :return: String
         """

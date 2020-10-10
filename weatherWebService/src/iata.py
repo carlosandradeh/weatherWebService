@@ -116,6 +116,11 @@ airportcodes = {
 }
 
 def getCityName(s):
+    """
+        Function that converts a iata code to the real name of a city.
+        : param s: String IATA CODE
+        :return: String name of a city.
+    """
     if s in airportcodes:
         return airportcodes[s]
     return s
