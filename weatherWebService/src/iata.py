@@ -102,10 +102,20 @@ airportcodes = {
 "CZA": "Yucatán",
 "MID": "Yucatán",
 "TZM": "Yucatán",
-"ZCL": "Zacatecas"
+"ZCL": "Zacatecas",
+"LIM" : "Lima",
+'DFW' : "Dallas",
+"HAV" : "Havana",
+"NY" : "New York",
+"YYZ" : "Toronto",
+"CCI" : "Concórdia",
+"AMS" : "Amsterdam",
+"CLT" : "Charlotte",
+"YVR" : "Vancouver",
+"IAH" : "Houston"
 }
 
 def getCityName(s):
-    return airportcodes[s]
-
-print(getCityName('MID'))
+    if s in airportcodes:
+        return airportcodes[s]
+    return s

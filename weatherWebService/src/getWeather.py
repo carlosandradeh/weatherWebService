@@ -1,37 +1,27 @@
 from request import Request
 
-class getWeather:
+class GetWeather:
 
     @staticmethod
-    def getInfo(city):
+    def get_info(city):
         """
         Method for the city format of the program's output.
         :param city: Iata code for the request to the weather API
         :return: String
         """
+        #Hacemos la petición a la Api
         result = Request.requests(city)
-        if result != 'Errooor':
+        if result != 'Error':
+            #Obtenemos los valores que necesitamos.
             city = ' City: ' + city
-            temp = ' Temperature: ' + str(result['temp'])
-            temp_max = ' Max Temperature: ' + str(result['temp_max'])
-            temp_min = ' Min Temperature: ' + str(result['temp_min'])
-            info = city + temp + temp_max + temp_min
+            description = ' Description: ' + result['description'] 
+            temp = ' Temperature: ' + str(result['temp']) + "°C"
+            temp_max = ' MaxTemperature: ' + str(result['temp_max']) + "°C"
+            temp_min = ' MinTemperature: ' + str(result['temp_min']) + "°C"
+            humidity = ' Humidity: ' + str(result['humidity'])
+            info = city + description + temp + temp_max + temp_min + humidity + '\n'
             return info
         else : 
-            return 'City not found'
-        
-        
+            return ' City not found ' + city
 
-    @staticmethod
-    def outputFormat(destination, origin='mex'):
-        """
-        Method for the format of the program's output.
-        :param destination: Iata code of the destination city for the request to the weather API
-        :param origin: Iata code of the origin city for the request to the weather API
-        :return: String
-        """
-        origin_format = getWeather.getInfo(origin)
-        destination_format = getWeather.getInfo(destination)
-        f = 'ORIGIN:\n' + origin_format + '\nDESTINATION:\n' + destination_format
-        return f
 
