@@ -5,6 +5,14 @@ from iata import getCityName
 import time
 
 def request_cache(city, cache, petitions):
+    """
+    Method to make a request if the city is not in the cache and return their weather info in a string; if the 
+    city is in the request then just return the info weather string on the key of the cache.
+    :param city: The name of the city 
+    :param cache: The dictionary (HashTable) where the info is collect.
+    :param petitions: The number o petitions to the OpenWeather API.
+    :return info_city: A String with the current weather info o a city. 
+    """
     #Si la ciudad no está en el diccionario Cache entonces hará una consulta y agregará la info al Cache.
     if city not in cache:
         info_city = GetWeather.get_info(city)
@@ -18,7 +26,11 @@ def request_cache(city, cache, petitions):
 
 
 def info_csv(path):
+    """
+        Method to open a csv file and print the weather info of each origin city and destination city in the csv.
+        :param path: The url of the csv file.
 
+    """
     petitions = 0
     cache = {}
     

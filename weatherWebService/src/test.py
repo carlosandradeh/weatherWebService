@@ -6,8 +6,11 @@ from getWeather import GetWeather
 
 
 def test_correct_city_name_request():
+    """
+        Test of a request with a correct city name.
+    """
     error_message = 'Error'
-    fail_message = 'Prove Correct City Name Request Fail'
+    fail_message = 'Test Correct City Name Request Fail'
 
     correct_city_name = 'Mexico'
     request_correct_city_name = Request.requests(correct_city_name)
@@ -15,8 +18,11 @@ def test_correct_city_name_request():
     return True
 
 def test_incorrect_city_name_request():
+    """
+        Test of a request with a incorrect city name.
+    """
     error_message = 'Error'
-    fail_message = 'Prove Incorrect City Name Request Fail'
+    fail_message = 'Test Incorrect City Name Request Fail'
     
     incorrect_city_name = 'Incorrect City Name'
     request_incorrect_city_name = Request.requests(incorrect_city_name)
@@ -24,8 +30,11 @@ def test_incorrect_city_name_request():
     return True
 
 def test_correct_iata_code_request():
+    """
+        Test of a request with a correct Iata code of a city.
+    """
     error_message = 'Error'
-    fail_message = 'Prove Correct Iata Code Request Fail'
+    fail_message = 'Test Correct Iata Code Request Fail'
     
     correct_iata_code = 'BOG'
     request_correct_iata_code = Request.requests(correct_iata_code)
@@ -33,8 +42,11 @@ def test_correct_iata_code_request():
     return True
 
 def test_incorrect_iata_code_request():
+    """
+        Test of a request with a incorrect Iata code of a city.
+    """
     error_message = 'Error'
-    fail_message = 'Prove Incorrect Iata Code Request Fail'
+    fail_message = 'Test Incorrect Iata Code Request Fail'
     
     incorrect_iata_code = 'IAC'
     request_incorrect_iata_code = Request.requests(incorrect_iata_code)
