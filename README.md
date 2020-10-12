@@ -11,8 +11,8 @@ Función:
 	por cada registro en el mismo, así obteniendo la información del clima de cada ciudad en tiempo real y mostrando dicha información al usuario. 
 	
 Para Ejecutar:
-  Estando fuera de webservice/ ejecutar:
-	$cd webservice/src
+  Estando fuera de weatherWebService/ ejecutar:
+	$cd weatherWebService/src
 	Una vez en src ejecutar:
 	python3 main.py
 	
