@@ -17,7 +17,7 @@ Para Ejecutar:
 	python3 main.py
 	
 Para Ejecutar las pruebas unitarias:
-  Estando fuera de webservice/ ejecutar:
+  Estando fuera de weatherWebService/ ejecutar:
 	$cd weatherWebService/src
 	Una vez en src ejecutar:
 	python3 test.py
