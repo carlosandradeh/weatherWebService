@@ -8,7 +8,7 @@ class Request:
     def requests(cls, city):
 
         """
-            Class Method to make a request with the iata code of a city, witch return a hash table with 
+            Class Method to make a request with the name of a city, witch return a hash table with 
             the info of the weather of the city in it if the status_code is succesfull.
             :param city: iata code of a city.
             :return: Hash table with a weather information of a city.

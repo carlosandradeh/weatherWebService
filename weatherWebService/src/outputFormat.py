@@ -5,8 +5,8 @@ class OutputFormat:
     def output_format(info_origin, info_destination):
         """
             Static method that return the final format to print it in the console.
-            :param info_origin: String with de weather orgin info.
-            :param info_destination: String with de destination weather info.
+            :param info_origin: String with de origin weather info.
+            :param info_destination: String with the destination weather info.
             :return f: Final string format.
         """
         lines = '----------------------------------------------------------------------------------------------------------------------------------------'

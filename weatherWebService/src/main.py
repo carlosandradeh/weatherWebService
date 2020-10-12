@@ -6,8 +6,8 @@ import time
 
 def request_cache(city, cache, petitions):
     """
-    Method to make a request if the city is not in the cache and return their weather info in a string; if the 
-    city is in the request then just return the info weather string on the key of the cache.
+    Method to make a request if the city is not in the cache, and return their weather info in a string; if the 
+    city is in the cache then just return the info weather string on the key of the cache.
     :param city: The name of the city 
     :param cache: The dictionary (HashTable) where the info is collect.
     :param petitions: The number o petitions to the OpenWeather API.
