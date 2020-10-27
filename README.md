@@ -23,9 +23,7 @@ por cada registro en el mismo, así obteniendo la información del clima de cada
   Estando fuera de weatherWebService/ ejecutar:
   	```
 	$ cd weatherWebService/src
-	
 	...
-	
 	$ python3 test.py
 	```
   
