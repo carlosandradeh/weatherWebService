@@ -14,11 +14,10 @@ por cada registro en el mismo, así obteniendo la información del clima de cada
   Estando fuera de weatherWebService/ ejecutar:
   	```
 	$ cd weatherWebService/src
-	
 	...
-	
 	$ python3 main.py
-	```	
+	```
+  		
 	
 ### Para Ejecutar las pruebas unitarias:
   Estando fuera de weatherWebService/ ejecutar:
@@ -28,5 +27,6 @@ por cada registro en el mismo, así obteniendo la información del clima de cada
 	...
 	
 	$ python3 test.py
-	```	
+	```
+  
 	
