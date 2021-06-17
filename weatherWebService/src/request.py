@@ -2,7 +2,7 @@ import requests
 
 class Request:
 
-    appid = 'd3b410cd42f22'
+    appid = 'd3b410cd42f3274d6bcd98f7f671d422'
 
     @classmethod
     def requests(cls, city):
